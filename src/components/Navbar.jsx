@@ -1,17 +1,17 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
-
+import meImage from './me.jpg'; 
 const Navbar = () => {
   return (
     <nav className="w-full flex justify-between items-center py-4 px-6 bg-gradient-to-r from-blue-900 via-gray-900 to-indigo-900 shadow-lg transition-all duration-500">
       {/* Logo and Name */}
       <div className="flex items-center gap-3">
         {/* Image Logo */}
-        <div className="w-10 h-10 rounded-full overflow-hidden shadow-lg flex items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-500">
+        <div className="w-12 h-12 rounded-full overflow-hidden shadow-lg bg-gradient-to-br from-blue-500 to-indigo-500">
           <img
-            src="C:\Users\Amit\OneDrive\Desktop\reactjs\paste-project\src\components" // <-- Replace with your image path
+            src={meImage} // <-- Replace with your image path
             alt="Logo"
-            className="w-8 h-8 object-contain"
+            className="w-full h-full object-cover"
           />
         </div>
         <span className="text-2xl font-bold text-blue-200 tracking-wide">Amit</span>
